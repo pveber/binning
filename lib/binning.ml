@@ -13,7 +13,7 @@ let create ?(n = 251) ~bin:proj ~zero ~add () = {
 let add t x y =
   let bin = t.proj x in
   let accu = Option.value (Hashtbl.find_opt t.table bin) ~default:t.zero in
-  Hashtbl.add t.table bin (t.add y accu)
+  Hashtbl.replace t.table bin (t.add y accu)
 
 let seq t = Hashtbl.to_seq t.table
 
