@@ -15,11 +15,10 @@ license: "CeCILL-B"
 homepage: "https://github.com/pveber/binning/"
 bug-reports: "https://github.com/pveber/binning/issues"
 depends: [
-  "dune" {>= "2.7"}
-  "odoc" {with-doc}
+  "dune" {>= "2.5"}
 ]
 build: [
-  ["dune" "subst"] {dev}
+  ["dune" "subst"] {pinned}
   [
     "dune"
     "build"
