@@ -11,7 +11,7 @@
 
 (package
   (name binning)
-  (synopsis "A datastructure to accumulate values in bins.")
+  (synopsis "A datastructure to accumulate values in bins")
   (description "
 This library is useful for counting elements by categories,
 constructing relations and transposing them. Binning are constructed
