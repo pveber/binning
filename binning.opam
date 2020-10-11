@@ -16,6 +16,7 @@ homepage: "https://github.com/pveber/binning/"
 bug-reports: "https://github.com/pveber/binning/issues"
 depends: [
   "dune" {>= "2.5"}
+  "ocaml" {>= "4.08"}
 ]
 build: [
   ["dune" "subst"] {pinned}

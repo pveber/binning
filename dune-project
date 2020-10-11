@@ -19,4 +19,5 @@ from streams of values. A binning can be seen as a generalized
 histogram: values are mapped to bins, and each bin keeps a summary
 value that is updated when an element is added (like a count, the list
 of elements, their mean, etc).")
-)
+  (depends
+    (ocaml (>= 4.08))))
